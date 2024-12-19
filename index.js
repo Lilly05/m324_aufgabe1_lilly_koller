@@ -8,6 +8,7 @@ console.log(`The ${chalk.greenBright(word1)} is ${chalk.redBright(word2)}.`);
 console.log("Hello this build should be green");
 console.log("hello this is for another pull request");
 
+
 export const sum = (a, b) => a + b;
 
 // ESLint errors
