@@ -1,0 +1,25 @@
+name: CI Workflow by me
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  linter-formatting-testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out code
+        uses: actions/checkout@v4
+
+      - name: Node.js Setup
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18.x'
+
+      - name: Dependencies
+      # npm ci ist besser als npm install weil immer die gleichen Dependencies mit der gleichen Version installiert werden und man so sich sicher sein kann, dass es immer gleich ist
+        run: npm ci
+
+      - name: Linting
+        run: npm run lint
