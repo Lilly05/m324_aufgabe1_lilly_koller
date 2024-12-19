@@ -1,0 +1,16 @@
+name: Comment on Pull Request
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Add Comment to Pull Request
+        uses: thollander/actions-comment-pull-request@v2
+        with:
+          message: |
+            🚀 Pull Request erhalten
