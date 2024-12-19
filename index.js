@@ -6,7 +6,7 @@ const word2 = generate();
 
 console.log(`The ${chalk.greenBright(word1)} is ${chalk.redBright(word2)}.`);
 console.log("Hello this build should be green");
-console.log("hello this is for another pull request");
+console.log("hello this is for another pull request woahahshdhssdm gfdmngf,dhd");
 
 
 export const sum = (a, b) => a + b;
